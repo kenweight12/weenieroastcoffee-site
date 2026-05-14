@@ -173,7 +173,7 @@ export default function App() {
               </p>
               <p>
                 At the same time, I wanted to make coffee that felt easier on the stomach. 
-                My fiancée has always loved the ritual of coffee, but the acidity didn’t always love her back. 
+                My fiancée has always loved the taste of coffee, but the acidity didn’t always love her back. 
                 That pushed me to keep adjusting, testing, and refining until I could create something she could actually enjoy—without compromise.
               </p>
               <p>
