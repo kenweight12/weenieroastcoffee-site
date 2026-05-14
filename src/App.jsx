@@ -9,10 +9,10 @@ const roasts = [
     notes: ["Jasmine", "Stone Fruit", "Honey"],
   },
   {
-    level: "Medium Roast",
+     level: "Medium Roast",
     name: "Slow Burn",
     desc: "Our signature all-day sipper. Balanced, nuanced, and deeply satisfying with caramel warmth.",
-    notes: ["Caramel", "Dark Cherry", "Hazelnut"],
+    notes: ["Caramel", "Dark Cherry", "Hazelnut"], 
   },
   {
     level: "Dark Roast",
@@ -26,17 +26,17 @@ const procesSteps = [
   {
     num: "01",
     title: "Source",
-    desc: "We travel to origin — Ethiopia, Colombia, Sumatra — to meet the farmers and select our green beans by hand.",
+    desc: "Thoughtfully source specialty coffees from growing regions around the world in search of unique flavors and coffees with real character.",
   },
   {
     num: "02",
     title: "Profile",
-    desc: "Every bean gets a custom roast curve, dialed by temperature, time, and airflow to coax out its best character.",
+    desc: "Every bean gets a custom roast curve, dialed by temperature, time, and airflow to coax out its best flavor.",
   },
   {
     num: "03",
     title: "Roast",
-    desc: "Small-batch roasted on our vintage drum roaster. Each batch is less than 15 lbs, never rushed, never repeated the same way twice.",
+    desc: "Small-batch roasted in our fluid bed roaster. Each batch is roasted in small quantities under 1 lb, carefully developed by hand so every bag has its own unique character and flavor profile.",
   },
   {
     num: "04",
@@ -46,10 +46,10 @@ const procesSteps = [
 ];
 
 const marqueeItems = [
-  "Small-Batch Roasted", "Tampa, Florida", "Est. 2019", "Direct Trade",
-  "Single Origin Blends", "Freshness Guaranteed", "Handcrafted Daily", "Specialty Grade Only",
-  "Small-Batch Roasted", "Tampa, Florida", "Est. 2019", "Direct Trade",
-  "Single Origin Blends", "Freshness Guaranteed", "Handcrafted Daily", "Specialty Grade Only",
+  "Small-Batch Crafted", "Tampa, Florida", "Est. 2025", "Backyard Roasted",
+  "Single Origin Offerings", "Freshness Guaranteed", "Handcrafted Daily", "Specialty Grade Only",
+  "Small-Batch Crafted", "Tampa, Florida", "Est. 2025", "Backyard Roasted",
+  "Single Origin Offerings", "Freshness Guaranteed", "Handcrafted Daily", "Specialty Grade Only",
 ];
 
 export default function App() {
@@ -104,13 +104,12 @@ export default function App() {
           <div className="hero-logo-wrap">
             <img src="/logo.png" alt="Weenie Roast Coffee Co." className="hero-logo" />
           </div>
-          <p className="hero-eyebrow">Small-Batch • Tampa, FL • Est. 2019</p>
+          <p className="hero-eyebrow">Small-Batch • Tampa, FL • Est. 2025</p>
           <h1 className="hero-title">
-            Coffee that<em>means it.</em>
+            Small dog.<em>Big flavor.</em>
           </h1>
           <p className="hero-sub">
-            We roast to order. Every batch pulled by hand, profiled to the bean, shipped while it
-            still smells like fire and possibility.
+            We roast to order. Every batch is roasted by hand, flavor profile shaped with intention, and shipped while it still carries the warmth, aroma, and energy of the roast.
           </p>
           <div className="hero-actions">
             <a href="#roasts" className="btn-primary">Explore Roasts</a>
@@ -159,26 +158,28 @@ export default function App() {
           <div className="about-wrap">
             <div className="about-visual">
               <div className="about-visual-inner">
-                <div className="about-visual-text">W R</div>
+                <img src="logo.png" alt="Weenie Roast Coffee Co." />
               </div>
-              <span className="about-year">Est. 2019</span>
+              <span className="about-year">Est. 2025</span>
               <div className="about-accent" />
             </div>
             <div className="about-body">
               <p className="section-label">Who We Are</p>
-              <h2 className="section-title">Born from <em>obsession.</em></h2>
+              <h2 className="section-title">Born from <em>experimentation.</em></h2>
               <p>
-                Weenie Roast Coffee Co. started as a backyard experiment in Tampa — a 1-pound drum
-                roaster, a spreadsheet full of time-temperature logs, and a stubborn belief that
-                great coffee deserves a great story.
+                Weenie Roast Coffee started with a simple mix of curiosity and tinkering. 
+                I’ve always been drawn to coffee—not just drinking it, but experimenting with it. 
+                Trying beans from different regions, dialing in roasts, and chasing the way each origin tells its own story through flavor.
               </p>
               <p>
-                We don't chase volume. We chase quality. Every bean we buy is traceable to the farm,
-                every roast profile is dialed by ear and eye, and every bag is sealed within 48 hours
-                of roasting so it reaches you the way we intended.
+                At the same time, I wanted to make coffee that felt easier on the stomach. 
+                My fiancée has always loved the ritual of coffee, but the acidity didn’t always love her back. 
+                That pushed me to keep adjusting, testing, and refining until I could create something she could actually enjoy—without compromise.
               </p>
               <p>
-                The name? A reminder that good things take heat, patience, and a little irreverence.
+                The name Weenie Roast is a nod to our late puppy, Iggy, and the warmth he brought into our lives. 
+                It’s also a little playful double entendre on “roast”
+                —a reminder not to take things too seriously, and to keep coffee fun, cozy, and always carrying a bit of campfire warmth.
               </p>
               <div className="about-stats">
                 <div>
@@ -286,9 +287,10 @@ export default function App() {
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     >
                       <option value="">Select a topic…</option>
-                      <option>Wholesale Inquiry</option>
-                      <option>Custom Roast Profile</option>
-                      <option>Event / Catering</option>
+                      {/* <option>Wholesale Inquiry</option> */}
+                      <option>I'd Like To Order</option>
+                      <option>Custom Roast Request</option>
+                      {/*<option>Event / Catering</option> */}
                       <option>General Question</option>
                       <option>Other</option>
                     </select>
