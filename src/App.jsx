@@ -181,6 +181,7 @@ export default function App() {
                 It's also a little playful double entendre on “roast”
                 —a reminder not to take things too seriously, and to keep coffee fun, cozy, and always carrying a bit of campfire warmth.
               </p>
+              {/*}
               <div className="about-stats">
                 <div>
                   <div className="about-stat-num">40+</div>
@@ -195,6 +196,7 @@ export default function App() {
                   <div className="about-stat-label">Roasting Since</div>
                 </div>
               </div>
+              */}
             </div>
           </div>
         </div>
