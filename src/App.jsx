@@ -158,7 +158,7 @@ export default function App() {
           <div className="about-wrap">
             <div className="about-visual">
               <div className="about-visual-inner">
-                <img src="logo.png" alt="Weenie Roast Coffee Co." />
+                <img src="kenandiggy.jpeg" alt="Weenie Roast Coffee Co." />
               </div>
               <span className="about-year">Est. 2025</span>
               <div className="about-accent" />
@@ -168,17 +168,17 @@ export default function App() {
               <h2 className="section-title">Born from <em>experimentation.</em></h2>
               <p>
                 Weenie Roast Coffee started with a simple mix of curiosity and tinkering. 
-                I’ve always been drawn to coffee—not just drinking it, but experimenting with it. 
+                I've always been drawn to coffee—not just drinking it, but experimenting with it. 
                 Trying beans from different regions, dialing in roasts, and chasing the way each origin tells its own story through flavor.
               </p>
               <p>
                 At the same time, I wanted to make coffee that felt easier on the stomach. 
-                My fiancée has always loved the taste of coffee, but the acidity didn’t always love her back. 
+                My fiancée has always loved the taste of coffee, but the acidity didn't always love her back. 
                 That pushed me to keep adjusting, testing, and refining until I could create something she could actually enjoy—without compromise.
               </p>
               <p>
                 The name Weenie Roast is a nod to our late puppy, Iggy, and the warmth he brought into our lives. 
-                It’s also a little playful double entendre on “roast”
+                It's also a little playful double entendre on “roast”
                 —a reminder not to take things too seriously, and to keep coffee fun, cozy, and always carrying a bit of campfire warmth.
               </p>
               <div className="about-stats">
@@ -225,13 +225,13 @@ export default function App() {
               <p className="section-label">Get In Touch</p>
               <h2 className="section-title">Let's <em>talk.</em></h2>
               <p>
-                Wholesale inquiries, custom roast profiles, event catering, or just want to geek out
-                on green coffee? We're all ears.
+                Order inquiries, custom roast request, or just general
+                questions? We're all ears.
               </p>
               <div className="contact-detail">
                 <div className="contact-detail-item">
                   <span className="contact-detail-label">Email</span>
-                  <span className="contact-detail-value">hello@weenieroast.co</span>
+                  <span className="contact-detail-value">hello@weenieroastcoffee.com</span>
                 </div>
                 <div className="contact-detail-item">
                   <span className="contact-detail-label">Location</span>
