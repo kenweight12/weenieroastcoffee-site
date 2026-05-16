@@ -4,22 +4,22 @@ import "./App.css";
 
 const roasts = [
   {
-    level: "Light Roast",
+    level: "Medium Roast",
     name: "Sunrise Blend",
-    desc: "A delicate morning cup with bright, floral complexity. Sourced from single-origin Ethiopian highlands.",
-    notes: ["Jasmine", "Stone Fruit", "Honey"],
+    desc: "A delicate morning cup with bright, floral complexity. Sourced single-origin from the highlands of Papua New Guinea.",
+    notes: ["Caramel", "Dried Fruit", "Honey"],
   },
   {
-     level: "Medium Roast",
-    name: "Slow Burn",
-    desc: "Our signature all-day sipper. Balanced, nuanced, and deeply satisfying with caramel warmth.",
-    notes: ["Caramel", "Dark Cherry", "Hazelnut"], 
+     level: "Medium-Dark Roast",
+    name: "Buesaco Bonfire",
+    desc: "Our signature all-day sipper. Balanced, nuanced, and deeply satisfying with caramel warmth. Sourced single-origin from Buesaco, Colombia.",
+    notes: ["Nutty", "Caramel", "Cocoa"], 
   },
   {
-    level: "Dark Roast",
-    name: "The Inferno",
-    desc: "Bold and unapologetic. A full-throttle roast for those who take their coffee seriously.",
-    notes: ["Dark Chocolate", "Smoke", "Espresso"],
+    level: "New Roast",
+    name: "Coming Soon",
+    desc: "The crew’s been sniffing around for something new lately… A fresh roast is currently in the works - Stay tuned.",
+    notes: ["So", "Many", "Possibilities"],
   },
 ];
 
