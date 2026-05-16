@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import "./App.css";
 
 const roasts = [
@@ -65,14 +66,32 @@ export default function App() {
   }, []);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) return;
-    setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 1200);
+      e.preventDefault();
+      if (!formData.name || !formData.email || !formData.message) return;
+      setSubmitting(true);
+  
+      emailjs
+        .send(
+          "service_1j877p6",   // ← EmailJS → Email Services → your service ID
+          "template_g9qnztb",  // ← EmailJS → Email Templates → your template ID
+          {
+            from_name:  formData.name,
+            from_email: formData.email,
+            subject:    formData.subject || "No subject",
+            message:    formData.message,
+          },
+          "cB6QHqg3ltoqXWdUx"    // ← EmailJS → Account → API Keys → Public Key
+        )
+        .then(() => {
+          setSubmitting(false);
+          setSubmitted(true);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        })
+        .catch((err) => {
+          console.error("EmailJS error:", err);
+          setSubmitting(false);
+          alert("Something went wrong. Please email us directly at hello@weenieroastcoffee.com");
+        });
   };
 
   return (
