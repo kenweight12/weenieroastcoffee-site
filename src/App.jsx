@@ -382,7 +382,7 @@ export default function App() {
             </a>
           </li>
         </ul>
-        <p className="footer-copy">Roasted with obsession · Tampa, FL</p>
+        <p className="footer-copy">Hey, thanks for being here.</p>
       </footer>
     </>
   );
