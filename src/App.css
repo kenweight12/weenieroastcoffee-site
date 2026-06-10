@@ -101,6 +101,58 @@ body::before {
 }
 .nav-cta:hover { background: var(--brown-mid); transform: translateY(-1px); }
 
+/* ── NAV RIGHT GROUP ── */
+.nav-right {
+  display: flex; align-items: center; gap: 1rem;
+}
+
+.nav-insta {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brown-light);
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+.nav-insta:hover {
+  border-color: var(--brown);
+  background: rgba(74,47,26,0.07);
+  transform: translateY(-1px);
+}
+.nav-insta-img {
+  width: 18px; height: 18px; object-fit: contain;
+  /* tint to match brand brown */
+  filter: sepia(1) saturate(0.6) brightness(0.45);
+}
+
+/* ── CONTACT INSTAGRAM ── */
+.contact-insta-link {
+  display: flex; align-items: center; gap: 0.55rem;
+  font-size: 0.88rem; color: var(--brown-mid);
+  text-decoration: none; transition: color 0.2s;
+  line-height: 1.6;
+}
+.contact-insta-link:hover { color: var(--brown); }
+
+.contact-insta-img {
+  width: 20px; height: 20px; object-fit: contain; flex-shrink: 0;
+  filter: sepia(1) saturate(0.6) brightness(0.45);
+}
+
+/* ── FOOTER INSTAGRAM ── */
+.footer-insta-link {
+  display: flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.footer-insta-link:hover { opacity: 1; transform: translateY(-1px); }
+
+.footer-insta-img {
+  width: 18px; height: 18px; object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
@@ -440,8 +492,11 @@ body::before {
 .footer-logo { display: flex; align-items: center; gap: 0.8rem; }
 
 .footer-logo-img {
-  height: 42px; width: auto; object-fit: contain;
-  filter: brightness(0) invert(1) opacity(0.8);
+  height: 38px; width: auto; object-fit: contain;
+  /* filter: brightness(0) invert(1) opacity(0.8);*/
+  background: var(--bg);
+  border-radius: 50%;
+
 }
 
 .footer-copy-inline {

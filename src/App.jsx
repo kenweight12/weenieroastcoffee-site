@@ -107,12 +107,23 @@ export default function App() {
           <li><a href="#process">Process</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button
-          className="nav-cta"
-          onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
-        >
-          Order Now
-        </button>
+        <div className="nav-right">
+          <a
+            href="https://www.instagram.com/weenieroastcoffee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-insta"
+            aria-label="Weenie Roast Coffee on Instagram"
+          >
+            <img src="/InstaLogo.png" alt="Instagram" className="nav-insta-img" />
+          </a>
+          <button
+            className="nav-cta"
+            onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
+          >
+            Order Now
+          </button>
+        </div>
       </nav>
 
       {/* HERO */}
@@ -265,6 +276,18 @@ export default function App() {
                   <span className="contact-detail-label">Hours</span>
                   <span className="contact-detail-value">Mon – Fri, 8am – 5pm EST</span>
                 </div>
+                <div className="contact-detail-item">
+                  <span className="contact-detail-label">Instagram</span>
+                  <a
+                    href="https://www.instagram.com/weenieroastcoffee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-insta-link"
+                  >
+                    <img src="/InstaLogo.png" alt="Instagram" className="contact-insta-img" />
+                    @weenieroastcoffee
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -347,6 +370,17 @@ export default function App() {
           <li><a href="#about">About</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/weenieroastcoffee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-insta-link"
+              aria-label="Instagram"
+            >
+              <img src="/InstaLogo.png" alt="Instagram" className="footer-insta-img" />
+            </a>
+          </li>
         </ul>
         <p className="footer-copy">Roasted with obsession · Tampa, FL</p>
       </footer>
